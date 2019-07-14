@@ -17,4 +17,5 @@
 **/*.jfm
 **/secrets.dev.yaml
 **/values.dev.yaml
+**/MyCoreTest/MyCoreTestPublish
 **/.toolstarget
