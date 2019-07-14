@@ -7,6 +7,8 @@ using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
+using MyCoreTest.Dal.Contracts;
+using MyCoreTest.Dal.EFCore.Repositories;
 
 namespace MyCoreTest
 {
@@ -28,6 +30,7 @@ namespace MyCoreTest
                 options.CheckConsentNeeded = context => true;
             });
 
+            services.AddTransient<IItemRepository, ItemRepository>();
 
             services.AddControllersWithViews();
             services.AddRazorPages();

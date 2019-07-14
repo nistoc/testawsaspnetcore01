@@ -11,7 +11,7 @@ namespace MyCoreTest.Dal.EFCore
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseNpgsql("Host=localhost;Port=5432;Database=devdb;Username=;Password=");
+            optionsBuilder.UseNpgsql("Host=localhost;Port=5432;Database=devdb;Username=postgrestest;Password=postgrestest");
         }
     }
 }

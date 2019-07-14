@@ -5,16 +5,13 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Npgsql.EntityFrameworkCore.PostgreSQL" Version="3.0.0-preview5" />
-  </ItemGroup>
-
-  <ItemGroup>
     <ProjectReference Include="..\Domains.Conversation\Domains.Conversation.csproj" />
-    <ProjectReference Include="..\MyCoreTest.Dal.Contracts\MyCoreTest.Dal.Contracts.csproj" />
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Services\" />
+    <Reference Include="Microsoft.EntityFrameworkCore">
+      <HintPath>..\..\..\..\Users\nisto\.nuget\packages\microsoft.entityframeworkcore\3.0.0-preview6.19304.10\lib\netstandard2.0\Microsoft.EntityFrameworkCore.dll</HintPath>
+    </Reference>
   </ItemGroup>
 
 </Project>
