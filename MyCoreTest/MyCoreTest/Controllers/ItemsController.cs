@@ -2,10 +2,10 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Domains.Conversation;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using MyCoreTest.Dal.Contracts;
-using MyCoreTest.Dal.EFCore.Repositories;
 
 namespace MyCoreTest.Controllers
 {
@@ -30,28 +30,35 @@ namespace MyCoreTest.Controllers
         //    return View();
         //}
 
-        //// GET: Items/Create
-        //public ActionResult Create()
-        //{
-        //    return View();
-        //}
+        // GET: Items/Create
+        public ActionResult Create()
+        {
+            var model = new Item
+            {
+                Message =  "Пустое сообщение",
+                CreatedBy = "A man"
+            };
+            return View(model);
+        }
 
-        //// POST: Items/Create
-        //[HttpPost]
-        //[ValidateAntiForgeryToken]
-        //public ActionResult Create(IFormCollection collection)
-        //{
-        //    try
-        //    {
-        //        // TODO: Add insert logic here
+        // POST: Items/Create
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public ActionResult Create(Item model)
+        {
+            try
+            {
+                model.CreatedAt = DateTime.Now;
 
-        //        return RedirectToAction(nameof(Index));
-        //    }
-        //    catch
-        //    {
-        //        return View();
-        //    }
-        //}
+                var result = _itemRepository.Add(model);
+
+                return RedirectToAction(nameof(Index));
+            }
+            catch
+            {
+                return View(model);
+            }
+        }
 
         //// GET: Items/Edit/5
         //public ActionResult Edit(int id)

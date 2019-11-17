@@ -8,10 +8,10 @@ namespace Domains.Conversation
 
         public string Message { get; set; }
 
-        public int SourceId { get; set; }
-        public Source Source { get; set; }
+        public int? SourceId { get; set; }
+        public virtual Source Source { get; set; }
 
         public DateTime CreatedAt { get; set; }
-        public DateTime CreatedBy { get; set; }
+        public string CreatedBy { get; set; }
     }
 }

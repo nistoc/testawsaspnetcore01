@@ -4,7 +4,7 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
-using MyCoreTest.Dal.EFCore;
+using MyCoreTest.EF;
 using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 
 namespace MyCoreTest.Migrations

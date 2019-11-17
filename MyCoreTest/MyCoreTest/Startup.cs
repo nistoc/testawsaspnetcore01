@@ -8,7 +8,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using MyCoreTest.Dal.Contracts;
-using MyCoreTest.Dal.EFCore.Repositories;
+using MyCoreTest.Repositories;
 
 namespace MyCoreTest
 {

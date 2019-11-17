@@ -1,8 +1,7 @@
-﻿using System;
-using Domains.Conversation;
+﻿using Domains.Conversation;
 using Microsoft.EntityFrameworkCore;
 
-namespace MyCoreTest.Dal.EFCore
+namespace MyCoreTest.EF
 {
     public class ConversationContext : DbContext
     {

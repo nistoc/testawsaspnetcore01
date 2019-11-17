@@ -3,13 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.29102.190
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyCoreTest", "MyCoreTest\MyCoreTest.csproj", "{4B433EA4-3C0B-4DB6-8AAF-3960C606E2E5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MyCoreTest", "MyCoreTest\MyCoreTest.csproj", "{4B433EA4-3C0B-4DB6-8AAF-3960C606E2E5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Domains.Conversation", "Domains.Conversation\Domains.Conversation.csproj", "{1745D603-2B04-48CE-A0F9-41FBB1BA45C8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Domains.Conversation", "Domains.Conversation\Domains.Conversation.csproj", "{1745D603-2B04-48CE-A0F9-41FBB1BA45C8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyCoreTest.Dal.EFCore", "MyCoreTest.Dal.EFCore\MyCoreTest.Dal.EFCore.csproj", "{C1DEE621-51EA-4245-9549-56D84CA68ABE}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyCoreTest.Dal.Contracts", "MyCoreTest.Dal.Contracts\MyCoreTest.Dal.Contracts.csproj", "{E2D9ADED-C9DB-48BE-B7EB-F5AB2E9E15E7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MyCoreTest.Dal.Contracts", "MyCoreTest.Dal.Contracts\MyCoreTest.Dal.Contracts.csproj", "{E2D9ADED-C9DB-48BE-B7EB-F5AB2E9E15E7}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -25,10 +23,6 @@ Global
 		{1745D603-2B04-48CE-A0F9-41FBB1BA45C8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1745D603-2B04-48CE-A0F9-41FBB1BA45C8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1745D603-2B04-48CE-A0F9-41FBB1BA45C8}.Release|Any CPU.Build.0 = Release|Any CPU
-		{C1DEE621-51EA-4245-9549-56D84CA68ABE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{C1DEE621-51EA-4245-9549-56D84CA68ABE}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{C1DEE621-51EA-4245-9549-56D84CA68ABE}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{C1DEE621-51EA-4245-9549-56D84CA68ABE}.Release|Any CPU.Build.0 = Release|Any CPU
 		{E2D9ADED-C9DB-48BE-B7EB-F5AB2E9E15E7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{E2D9ADED-C9DB-48BE-B7EB-F5AB2E9E15E7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E2D9ADED-C9DB-48BE-B7EB-F5AB2E9E15E7}.Release|Any CPU.ActiveCfg = Release|Any CPU

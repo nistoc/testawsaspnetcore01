@@ -1,10 +1,11 @@
-﻿using Domains.Conversation;
-using MyCoreTest.Dal.Contracts;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using Domains.Conversation;
+using MyCoreTest.Dal.Contracts;
+using MyCoreTest.EF;
 
-namespace MyCoreTest.Dal.EFCore.Repositories
+namespace MyCoreTest.Repositories
 {
     public class ItemRepository : IItemRepository
     {
@@ -19,8 +20,9 @@ namespace MyCoreTest.Dal.EFCore.Repositories
         {
             if (item == null) throw new ArgumentNullException(nameof(item));
             using var conversationContext = new ConversationContext();
-
-            return (MyCoreEntityState)(int)conversationContext.Items.Remove(item).State;
+            var result = (MyCoreEntityState) (int) conversationContext.Items.Remove(item).State;
+            conversationContext.SaveChanges();
+            return result;
         }
 
         public MyCoreEntityState Add(Item item)
@@ -28,7 +30,9 @@ namespace MyCoreTest.Dal.EFCore.Repositories
             if (item == null) throw new ArgumentNullException(nameof(item));
             using var conversationContext = new ConversationContext();
 
-            return (MyCoreEntityState)(int)conversationContext.Items.Add(item).State;
+            var result = (MyCoreEntityState)(int)conversationContext.Items.Add(item).State;
+            conversationContext.SaveChanges();
+            return result;
         }
     }
 }
